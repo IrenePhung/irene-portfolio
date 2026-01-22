@@ -3,11 +3,11 @@
 import Sidebar from "@/components/Sidebar";
 
 type Props = {
-	active?: "profile" | "portfolio";
+	active?: "profile" | "resume";
 	children: React.ReactNode;
 };
 
-export default function PageShell({ active = "portfolio", children }: Props) {
+export default function PageShell({ active = "resume", children }: Props) {
 	return (
 		<main className="min-h-screen text-white">
 			<div className="relative min-h-screen bg-grid vignette noise">
