@@ -1,3 +1,6 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/work/renopilot/page": "app/work/renopilot/page.js",
+  "/work/scriptcraft/page": "app/work/scriptcraft/page.js",
+  "/work/trailblazer/page": "app/work/trailblazer/page.js"
 }

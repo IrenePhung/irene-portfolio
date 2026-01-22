@@ -3,7 +3,7 @@
 
 type AppRoutes = "/" | "/work/[slug]" | "/work/renopilot" | "/work/scriptcraft" | "/work/trailblazer"
 type PageRoutes = never
-type LayoutRoutes = "/"
+type LayoutRoutes = "/" | "/work"
 type RedirectRoutes = never
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
@@ -11,6 +11,7 @@ type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRo
 
 interface ParamMap {
   "/": {}
+  "/work": {}
   "/work/[slug]": { "slug": string; }
   "/work/renopilot": {}
   "/work/scriptcraft": {}
@@ -22,6 +23,7 @@ export type ParamsOf<Route extends Routes> = ParamMap[Route]
 
 interface LayoutSlotMap {
   "/": never
+  "/work": never
 }
 
 

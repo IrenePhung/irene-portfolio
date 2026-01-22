@@ -4,7 +4,7 @@ import FeaturedWork from "@/components/FeatureWork";
 
 export default function Home() {
 	return (
-		<PageShell active="portfolio">
+		<PageShell>
 			<div className="space-y-10">
 				<Hero />
 				<FeaturedWork />
